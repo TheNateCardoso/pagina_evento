@@ -10,7 +10,8 @@
   "license": "MIT",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.15.4",
-    "parcel": "^2.15.4"
+    "parcel": "^2.15.4",
+    "sharp": "^0.33.5"
   },
   "dependencies": {
     "ansi-styles": "^4.3.0",
