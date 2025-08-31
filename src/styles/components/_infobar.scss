@@ -1,0 +1,41 @@
+@use '../variaveis';
+
+.info-bar{
+    padding: 16px 24px;
+    background-color: variaveis.$textColor;
+    display: flex;
+    justify-content: space-between;
+
+    &__info{
+        display: flex;
+        gap: 40px;
+
+        &__item{
+            font-size: 14px;
+            color: variaveis.$altTextColor;
+
+            b{
+                font-size: 18px;
+                color: variaveis.$altTextColor;
+                display: block;
+            }
+        }
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+        &__info{
+            display: block;
+
+            &__item{
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        &__info{
+            gap: 16px;
+        }
+    }
+}
