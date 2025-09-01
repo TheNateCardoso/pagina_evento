@@ -3,25 +3,27 @@
 .event{
     padding: 80px 0;
 
-    &--frontend{
+    &--requirements{
         background-image: linear-gradient(variaveis.$blue1, variaveis.$blue2);
     }
 
-    &--ui-ux{
-        background-image: linear-gradient(variaveis.$blue2, variaveis.$pink);
+    &--forbidden{
+        background-image: linear-gradient(variaveis.$blue2, variaveis.$purple2);
     }
 
-    &--data-science{
-        background-image: linear-gradient(variaveis.$pink, variaveis.$yellow);
+    &--attending{
+        background-image: linear-gradient(variaveis.$purple2, variaveis.$red);
     }
 
-    &--backend{
-        background-image: linear-gradient(variaveis.$yellow, variaveis.$pink);
+    &--absent{
+        background-image: linear-gradient(variaveis.$red, variaveis.$purple1);
     }
 
     &--image-left{
         .container{
             flex-direction: row-reverse;
+            height: 100%;
+            max-height: 300px;
         }
     }
 
@@ -31,7 +33,7 @@
     }
 
     &__image{
-        max-width: 360px;
+        max-width: 200px;
     }
 
     &__details{
@@ -58,6 +60,20 @@
         &__details__text{
             margin-bottom: 16px;
             margin-right: 0;
+        }
+    }
+
+    @media (max-width: 1024px) {
+            .container{
+            display: block;
+        }
+
+        &__image{
+            width: 100%;
+        }
+
+        &__details__text{
+            margin: 16px 0;
         }
     }
 }

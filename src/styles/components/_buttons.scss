@@ -9,8 +9,9 @@
     white-space: nowrap;
 
     &--primary{
+        border-radius: 5px;
         color: variaveis.$textColor;
-        background-color: variaveis.$purple;
+        background-color: variaveis.$purple1;
     }
 
     @media (max-width: 640px) {
