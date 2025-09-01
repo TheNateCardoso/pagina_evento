@@ -1,6 +1,6 @@
 AOS.init();
 
-const eventDay=new Date("Dec 12, 2025 19:00:00");
+const eventDay=new Date("Sep 3, 2025 21:00:00");
 const eventTimeStamp=eventDay.getTime();
 
 const Countdown=setInterval(function(){
@@ -17,10 +17,10 @@ const Countdown=setInterval(function(){
     const minutesTilTheDay=Math.floor((CountdownTilTheDay%hoursInMs)/minutesInMs);
     const secondsTilTheDay=Math.floor((CountdownTilTheDay%minutesInMs)/1000);
 
-    document.getElementById('contador').innerHTML=`${daysTilTheDay}d ${hoursTilTheDay}h ${minutesTilTheDay}min ${secondsTilTheDay}s`;
+    document.getElementById('contador').innerHTML=`começa em ${daysTilTheDay}d ${hoursTilTheDay}h ${minutesTilTheDay}min ${secondsTilTheDay}s`;
 
     if (CountdownTilTheDay<0) {
         clearInterval(Countdown);
-        document.getElementById('contador').innerHTML=`Ah, você moscou!`;
+        document.getElementById('contador').innerHTML=`já passou e você nem se lembra!`;
     }
 },1000)
